@@ -1,0 +1,175 @@
+object FMain: TFMain
+  Left = 0
+  Top = 0
+  ClientHeight = 1004
+  ClientWidth = 768
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Touch.InteractiveGestures = [igZoom]
+  OnGesture = FormGesture
+  DesignerMobile = True
+  DesignerWidth = 768
+  DesignerHeight = 1024
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object tbPad: TToolBar
+    Align = alBottom
+    Height = 44.000000000000000000
+    Position.Y = 960.000000000000000000
+    TabOrder = 1
+    Width = 768.000000000000000000
+    object btnPadFront: TSpeedButton
+      StaysPressed = True
+      GroupName = 'CameraSelectorPad'
+      Height = 29.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'segmentedbuttonleft'
+      Text = 'Front camera'
+      Trimming = ttCharacter
+      Width = 96.000000000000000000
+      OnClick = btnFrontClick
+    end
+    object btnPadBack: TSpeedButton
+      StaysPressed = True
+      GroupName = 'CameraSelectorPad'
+      Height = 29.000000000000000000
+      IsPressed = True
+      Position.X = 103.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'segmentedbuttonright'
+      Text = 'Back camera'
+      Trimming = ttCharacter
+      Width = 96.000000000000000000
+      OnClick = btnBackClick
+    end
+    object btnPadSnap: TSpeedButton
+      Align = alCenter
+      Height = 30.000000000000000000
+      StyleLookup = 'listitembutton'
+      Text = 'Take a Picture'
+      Trimming = ttCharacter
+      Width = 105.000000000000000000
+      OnClick = btnSnapClick
+    end
+    object chkPadFaces: TSwitch
+      Anchors = [akTop, akRight]
+      Height = 35.000000000000000000
+      IsChecked = False
+      Position.X = 704.000000000000000000
+      Position.Y = 4.000000000000000000
+      TabOrder = 3
+      Width = 55.000000000000000000
+      OnSwitch = chkFacesSwitch
+      object lblPadFaces: TLabel
+        Font.Size = 15.000000000000000000
+        FontColor = claCornflowerblue
+        StyledSettings = [ssFamily, ssStyle]
+        Height = 35.000000000000000000
+        Position.X = -60.000000000000000000
+        Position.Y = -1.000000000000000000
+        Text = 'Faces'
+        TextAlign = taTrailing
+        Width = 57.000000000000000000
+        Trimming = ttCharacter
+      end
+    end
+  end
+  object tbPhone: TToolBar
+    Align = alBottom
+    Height = 44.000000000000000000
+    Position.Y = 916.000000000000000000
+    TabOrder = 2
+    Width = 768.000000000000000000
+    object btnPhoneFront: TSpeedButton
+      StaysPressed = True
+      GroupName = 'CameraSelectorPhone'
+      Height = 29.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'segmentedbuttonleft'
+      Text = 'Front'
+      Trimming = ttCharacter
+      Width = 45.000000000000000000
+      OnClick = btnFrontClick
+    end
+    object btnPhoneBack: TSpeedButton
+      StaysPressed = True
+      GroupName = 'CameraSelectorPhone'
+      Height = 29.000000000000000000
+      IsPressed = True
+      Position.X = 52.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'segmentedbuttonright'
+      Text = 'Back'
+      Trimming = ttCharacter
+      Width = 45.000000000000000000
+      OnClick = btnBackClick
+    end
+    object btnPhoneSnap: TSpeedButton
+      Anchors = [akTop, akRight]
+      Height = 30.000000000000000000
+      Position.X = 703.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'listitembutton'
+      Text = 'Snap!'
+      Trimming = ttCharacter
+      Width = 54.000000000000000000
+      OnClick = btnSnapClick
+    end
+    object layPhoneFaces: TLayout
+      Align = alCenter
+      Height = 34.000000000000000000
+      Width = 105.000000000000000000
+      object chkPhoneFaces: TSwitch
+        Height = 35.000000000000000000
+        IsChecked = False
+        Position.X = 46.000000000000000000
+        Position.Y = 1.000000000000000000
+        TabOrder = 0
+        Width = 55.000000000000000000
+        OnSwitch = chkFacesSwitch
+        object lblPhoneFaces: TLabel
+          Font.Size = 15.000000000000000000
+          FontColor = claCornflowerblue
+          StyledSettings = [ssFamily, ssStyle]
+          Height = 35.000000000000000000
+          Position.X = -60.000000000000000000
+          Position.Y = -1.000000000000000000
+          Text = 'Faces'
+          TextAlign = taTrailing
+          Width = 57.000000000000000000
+          Trimming = ttCharacter
+        end
+      end
+    end
+  end
+  object cpError: TCalloutPanel
+    Anchors = [akLeft, akBottom]
+    Height = 120.000000000000000000
+    Padding.Top = 11.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 847.000000000000000000
+    Visible = False
+    Width = 133.000000000000000000
+    TabOrder = 0
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 11.000000000000000000
+    CalloutPosition = cpBottom
+    object lblError: TLabel
+      Align = alClient
+      Height = 94.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 15.000000000000000000
+      VertTextAlign = taLeading
+      Width = 123.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+end

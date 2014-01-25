@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/12/22 18:30:03.000.298,=C:\Users\Christen\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/12/22 18:30:41.000.173,C:\Users\Christen\Documents\RAD Studio\Projects\Unit1.fmx=C:\Desarrollo\SquareCamFmx\uFMain.fmx</Transaction>
+    <Transaction>2013/12/22 18:30:41.000.173,C:\Users\Christen\Documents\RAD Studio\Projects\Unit1.pas=C:\Desarrollo\SquareCamFmx\uFMain.pas</Transaction>
+    <Transaction>2013/12/22 18:30:51.000.725,C:\Users\Christen\Documents\RAD Studio\Projects\Project1.dproj=C:\Desarrollo\SquareCamFmx\SquareCamFmx.dproj</Transaction>
+    <Transaction>2014/01/15 21:46:12.000.167,=C:\Desarrollo\SquareCamFmx\Unit1.pas</Transaction>
+    <Transaction>2014/01/15 21:46:52.000.624,C:\Desarrollo\SquareCamFmx\Unit1.pas=C:\Desarrollo\SquareCamFmx\uFMain_iPhone.pas</Transaction>
+    <Transaction>2014/01/15 21:46:52.000.624,C:\Desarrollo\SquareCamFmx\Unit1.fmx=C:\Desarrollo\SquareCamFmx\uFMain_iPhone.fmx</Transaction>
+    <Transaction>2014/01/15 21:47:40.000.611,C:\Desarrollo\SquareCamFmx\uFMain_iPhone.pas=</Transaction>
+    <Transaction>2014/01/19 10:05:57.000.885,=C:\Desarrollo\SquareCamFmx\Unit1.pas</Transaction>
+    <Transaction>2014/01/19 10:06:31.000.144,C:\Desarrollo\SquareCamFmx\Unit1.fmx=C:\Desarrollo\SquareCamFmx\uFToolBar.fmx</Transaction>
+    <Transaction>2014/01/19 10:06:31.000.144,C:\Desarrollo\SquareCamFmx\Unit1.pas=C:\Desarrollo\SquareCamFmx\uFToolBar.pas</Transaction>
+    <Transaction>2014/01/19 11:17:48.000.888,C:\Desarrollo\SquareCamFmx\uFToolBar.pas=</Transaction>
+  </Transactions>
+	<MobileDevice>iPhone5</MobileDevice>
+</BorlandProject>
